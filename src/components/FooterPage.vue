@@ -3,9 +3,9 @@
     <h4>Контакты:</h4>
     <div>
       <div>Телефон: +79600534934</div>
-      <div>Email: vgashookovich@gmail.com</div>
-      <div>Telegram: <a href="https://t.me/Vadim_Arzhanov" style="color: #FFE4B5;">@Vadim_Arzhanov</a></div>
       <div>GitHub: https://github.com/Gashookovich</div>
+      <div>Telegram: <a href="https://t.me/Vadim_Arzhanov" style="color: #FFE4B5;">@Vadim_Arzhanov</a></div>
+      <div>Email: vgashookovich@gmail.com</div>
     </div>
   </div>
 </template>

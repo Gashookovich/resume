@@ -16,7 +16,7 @@
       <div class="home-page__btns">
         <my-button @click="$router.push('/aducation')">Образование</my-button>
         <my-button @click="$router.push('/experience')" style="margin-top: 80px;">Опыт работы</my-button>
-        <my-button @click="$router.push('/hobbies')" style="margin-top: 80px;">Увлечения и хобби</my-button>
+        <my-button @click="$router.push('/hobbies')" style="margin-top: 80px;">Доп. информация</my-button>
       </div>
     </div>
 
