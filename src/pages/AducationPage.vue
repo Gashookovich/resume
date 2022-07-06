@@ -80,6 +80,7 @@ export default {
 <style scoped>
 .aducation {
   color: #4B0082;
+  font-family: URW Chancery L, cursive;
 }
 .aducation__content {
   display: flex;
@@ -100,6 +101,8 @@ export default {
   padding: 5px 5px;
   margin-top: 10px;
   text-align: left;
+  color: #2F4F4F;
+  background-color: #FFE4B5;
 }
 .aducation__image {
   display: flex;

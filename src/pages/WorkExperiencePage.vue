@@ -37,6 +37,7 @@ export default {
 <style scoped>
 .work {
   color: #4B0082;
+  font-family: URW Chancery L, cursive;
 }
 .work__content {
   display: flex;
@@ -57,5 +58,7 @@ export default {
   padding: 5px 5px;
   margin-top: 10px;
   text-align: left;
+  color: #2F4F4F;
+  background-color: #FFE4B5;
 }
 </style>
