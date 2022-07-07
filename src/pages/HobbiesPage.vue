@@ -22,9 +22,9 @@
     </div>
     <div class="hobbies__content">
       <div class="hobbies__content-footer">
-        Также onelove хип-хоп и всё что с ним связано. Играю в баскетбол и волейбол, катаюсь на скейте и bmx.
+        Также one love хип-хоп и всё что с ним связано. Играю в баскетбол и волейбол, катаюсь на скейте и bmx.
         Люблю много гулять. Очень положительно отношусь к выездам на природу с палатками, сколько лет подряд ездил
-        на сплав.
+        на сплав. В общем и целом не особо люблю сидеть на месте. Мир!
       </div>
     </div>
   </div>
@@ -76,7 +76,7 @@ export default {
   background-color: #FFE4B5;
 }
 .hobbies__content-body {
-  width: 90%;
+  width: 80%;
   margin: 10px 10px;
   display: flex;
   flex-direction: row;
@@ -97,6 +97,20 @@ export default {
   border: 1px solid #4B0082;
   border-radius: 10px;
   margin-left: 2%;
+  color: #2F4F4F;
+  background-color: #FFE4B5;
+}
+.hobbies__content-footer {
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  border: 1px solid #4B0082;
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin-top: 10px;
+  text-align: center;
   color: #2F4F4F;
   background-color: #FFE4B5;
 }
