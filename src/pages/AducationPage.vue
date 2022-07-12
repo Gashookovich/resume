@@ -1,51 +1,15 @@
 <template>
   <div class="aducation">
     <h1>Образование</h1>
-    <div class="aducation__content">
-      <div class="aducation__content-compound">
-        <div><strong>Уровень образования:</strong>Высшее</div>
-        <div><strong>Название учебного заведения:</strong>Казанский Государственный Энергетический Университет</div>
-        <div><strong>Факультет:</strong>Институт электроэнергетики (ИЭЭ)</div>
-        <div><strong>Специализация:</strong>Электроснабжение промышленных предприятий</div>
-        <div><strong>Годы обучения:</strong>2009-2014</div>
-      </div>
-      <div class="aducation__content-compound">
-        <div><strong>Уровень образования:</strong>Курс повышения квалификации</div>
-        <div><strong>Название учебного заведения:</strong>Общество изобретателей и рационализаторов Республики Татарстан</div>
-        <div><strong>Специализация:</strong>Патентоведение</div>
-        <div><strong>Год обучения:</strong>2020</div>
-      </div>
-      <div class="aducation__content-compound">
-        <div><strong>Уровень образования:</strong>Оффлайн курс</div>
-        <div><strong>Источник:</strong>BE ON MAX</div>
-        <div><strong>Название:</strong>ОсновыHTML5 и CSS3</div>
-        <div><strong>Год обучения:</strong>2021</div>
-      </div>
-      <div class="aducation__content-compound">
-        <div><strong>Уровень образования:</strong>Оффлайн курс</div>
-        <div><strong>Источник:</strong>ITDVN</div>
-        <div><strong>Название:</strong>Java Script starter</div>
-        <div><strong>Год обучения:</strong>2021</div>
-      </div>
-      <div class="aducation__content-compound">
-        <div><strong>Уровень образования:</strong>Оффлайн курс</div>
-        <div><strong>Источник:</strong>Cyber Bionic Systematic</div>
-        <div><strong>Название:</strong>Java Script: Базовый курс</div>
-        <div><strong>Год обучения:</strong>2021</div>
-      </div>
-      <div class="aducation__content-compound">
-        <div><strong>Уровень образования:</strong>Оффлайн курс</div>
-        <div><strong>Источник:</strong>Cyber Bionic Systematic</div>
-        <div><strong>Название:</strong>Java Script: Продвинутый курс</div>
-        <div><strong>Год обучения:</strong>2021</div>
-      </div>
-      <div class="aducation__content-compound">
-        <div><strong>Уровень образования:</strong>Онлайн курс переквалификации</div>
-        <div><strong>Название учебного заведения:</strong>Универсиет Иннополис</div>
-        <div><strong>Специализация:</strong>Основы frontend разработки</div>
-        <div><strong>Годы обучения:</strong>2021-2022</div>
-      </div>
+    <div class="aducation__select">
+      <my-select
+          v-model="selectedSort"
+          :options="sortOptions"
+      />
     </div>
+    <cards-aducation-list
+        :cards="cards"
+    />
     <div class="aducation__image">
       <img class="image" :src="image1"/>
       <img class="image" :src="image2"/>
@@ -54,7 +18,6 @@
       <img class="image" :src="image3"/>
       <img class="image" :src="image4"/>
     </div>
-
   </div>
 </template>
 
@@ -63,16 +26,83 @@ import image1 from "@/img/diplom0.png";
 import image2 from "@/img/diplom1.png";
 import image3 from "@/img/diplom2.png";
 import image4 from "@/img/diplom3.png";
+import MySelect from "@/components/UI/MySelect";
+import CardsAducationList from "@/components/CardsAducationList";
 
 export default {
-  data: function () {
+  components: {
+    CardsAducationList,
+    MySelect,
+  },
+  data() {
     return {
       image1: image1,
       image2: image2,
       image3: image3,
       image4: image4,
-
+      cards: [
+        {
+          id: 1,
+          aducation: 'Высшее',
+          organization: 'Казанский Государственный Энергетический Университет',
+          specialization: 'Электроснабжение промышленных предприятий',
+          year: '2009-2014',
+        },
+        {
+          id: 2,
+          aducation: 'Курс повышения квалификации',
+          organization: 'Общество изобретателей и рационализаторов Республики Татарстан',
+          specialization: 'Патентоведение',
+          year: '2020',
+        },
+        {
+          id: 3,
+          aducation: 'Оффлайн курс',
+          organization: 'BE ON MAX',
+          specialization: 'Основы HTML5 и CSS3',
+          year: '2021',
+        },
+        {
+          id: 4,
+          aducation: 'Оффлайн курс',
+          organization: 'ITDVN',
+          specialization: 'JavaScript starter',
+          year: '2021',
+        },
+        {
+          id: 5,
+          aducation: 'Оффлайн курс',
+          organization: 'Cyber Bionic Systematic',
+          specialization: 'JavaScript: Базовый курс',
+          year: '2021',
+        },
+        {
+          id: 6,
+          aducation: 'Оффлайн курс',
+          organization: 'Cyber Bionic Systematic',
+          specialization: 'JavaScript: Продвинутый курс',
+          year: '2021',
+        },
+        {
+          id: 7,
+          aducation: 'Онлайн курс переквалификации',
+          organization: 'Университет Иннополис',
+          specialization: 'Основы frontend разработки',
+          year: '2021-2022',
+        },
+      ],
+      selectedSort: '',
+      sortOptions: [
+        {value: 'aducation', name: 'Уровень образования'},
+        {value: 'organization', name: 'Название учебного заведения'},
+        {value: 'specialization', name: 'Специализация'},
+      ]
     }
+  },
+  computed: {
+    sortedCards() {
+      return [...this.cards].sort((card1, card2) => card1[this.selectedSort]?.localeCompare(card2[this.selectedSort]))
+    },
   }
 }
 </script>
@@ -82,27 +112,9 @@ export default {
   color: #4B0082;
   font-family: URW Chancery L, cursive;
 }
-.aducation__content {
+.aducation__select {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 10px;
-}
-.aducation__content-compound {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  line-height: 1.5;
-  border: 1px solid #4B0082;
-  border-radius: 10px;
-  padding: 5px 5px;
-  margin-top: 10px;
-  text-align: left;
-  color: #2F4F4F;
-  background-color: #FFE4B5;
+  justify-content: flex-end;
 }
 .aducation__image {
   display: flex;

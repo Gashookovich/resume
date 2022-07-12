@@ -19,7 +19,6 @@
         <my-button @click="$router.push('/hobbies')" style="margin-top: 80px;">Доп. информация</my-button>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -28,12 +27,14 @@ import image from "@/img/myPhoto3.png";
 import MyButton from "@/components/UI/MyButton";
 
 export default {
-  components: {MyButton},
-  data: function () {
+  components: {
+    MyButton,
+  },
+  data() {
     return {
       image: image,
     }
-  }
+  },
 }
 </script>
 

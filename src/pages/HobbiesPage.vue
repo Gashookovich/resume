@@ -76,7 +76,7 @@ export default {
   background-color: #FFE4B5;
 }
 .hobbies__content-body {
-  width: 80%;
+  width: 90%;
   margin: 10px 10px;
   display: flex;
   flex-direction: row;
