@@ -19,6 +19,7 @@
         <my-button @click="$router.push('/hobbies')" style="margin-top: 80px;">Доп. информация</my-button>
       </div>
     </div>
+
   </div>
 </template>
 

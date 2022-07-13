@@ -15,7 +15,7 @@ export default {
   components: {
     NavbarPage,
     FooterPage
-  }
+  },
 }
 </script>
 

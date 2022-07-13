@@ -2,10 +2,28 @@
   <div class="footer">
     <h4>Контакты:</h4>
     <div>
-      <div>Телефон: +79600534934</div>
-      <div>GitHub: https://github.com/Gashookovich</div>
-      <div>Telegram: <a href="https://t.me/Vadim_Arzhanov" style="color: #FFE4B5;">@Vadim_Arzhanov</a></div>
-      <div>Email: vgashookovich@gmail.com</div>
+      <div><strong>Телефон:</strong>+79600534934</div>
+      <div>
+        <strong>GitHub:</strong>
+        <a
+          href="https://github.com/Gashookovich"
+          style="color: #FFE4B5;"
+          target="_blank"
+        >
+          https://github.com/Gashookovich
+        </a>
+      </div>
+      <div>
+        <strong>Telegram:</strong>
+        <a
+            href="https://t.me/Vadim_Arzhanov"
+            style="color: #FFE4B5;"
+            target="_blank"
+        >
+          @Vadim_Arzhanov
+        </a>
+      </div>
+      <div><strong>Email:</strong> vgashookovich@gmail.com</div>
     </div>
   </div>
 </template>
