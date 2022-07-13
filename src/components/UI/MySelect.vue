@@ -34,7 +34,7 @@ export default {
 <style scoped>
 select {
   width: 22%;
-  background-color: #FFFFE0;
+  background-color: #FFE4B5;
   font-family: URW Chancery L, cursive;
   color: #4B0082;
   border: 2px solid #4B0082;

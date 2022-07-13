@@ -83,8 +83,7 @@ export default {
   align-items: center;
 }
 .hobbies__content-body-image {
-  width: 100%;
-  height: 600px;
+  width: 35%;
   margin-left: 5%;
   border: 1px solid #4B0082;
   border-radius: 10px;
