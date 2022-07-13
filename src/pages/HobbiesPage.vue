@@ -76,10 +76,9 @@ export default {
   background-color: #FFE4B5;
 }
 .hobbies__content-body {
-  width: 90%;
+  width: 85%;
   margin: 10px 10px;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .hobbies__content-body-image {

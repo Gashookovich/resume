@@ -26,6 +26,7 @@ export default {
   box-sizing: border-box;
 }
 .app {
+  width: 100%;
   padding: 20px;
   text-align: center;
   background-color: #FFFFE0;
