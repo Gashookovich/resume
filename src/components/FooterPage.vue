@@ -27,7 +27,7 @@ export default {
   line-height: 2;
   align-items: flex-start;
   padding: 0 15px;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: URW Chancery L;
   color: #FFE4B5;
 }
 </style>
