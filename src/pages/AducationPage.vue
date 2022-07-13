@@ -8,7 +8,7 @@
       />
     </div>
     <cards-aducation-list
-        :cards="cards"
+        :cards="sortedCards"
     />
     <div class="aducation__image">
       <img class="image" :src="image1"/>
@@ -92,6 +92,7 @@ export default {
         },
       ],
       selectedSort: '',
+      searchQuery: '',
       sortOptions: [
         {value: 'aducation', name: 'Уровень образования'},
         {value: 'organization', name: 'Название учебного заведения'},
