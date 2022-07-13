@@ -54,6 +54,6 @@ export default {
 <style scoped>
 .work {
   color: #4B0082;
-  font-family: URW Chancery L, cursive;
+  font-family: Georgia, serif;
 }
 </style>

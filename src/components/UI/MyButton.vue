@@ -19,7 +19,7 @@ export default {
   cursor: pointer;
   border-radius: 15px;
   box-shadow: 2px 2px 4px gray;
-  font-family: URW Chancery L, cursive;
+  font-family: Georgia, serif;
 }
 .btn:hover {
   background-color: #FFFF00;

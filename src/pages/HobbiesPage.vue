@@ -52,7 +52,7 @@ export default {
 <style scoped>
 .hobbies {
   color: #4B0082;
-  font-family: URW Chancery L, cursive;
+  font-family: Georgia, serif;
 }
 .hobbies__content {
   display: flex;

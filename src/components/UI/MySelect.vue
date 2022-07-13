@@ -35,7 +35,7 @@ export default {
 select {
   width: 22%;
   background-color: #FFE4B5;
-  font-family: URW Chancery L, cursive;
+  font-family: Georgia, serif;
   color: #4B0082;
   border: 2px solid #4B0082;
   border-radius: 10px;

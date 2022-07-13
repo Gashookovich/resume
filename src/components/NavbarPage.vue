@@ -26,7 +26,7 @@ export default {
   display: flex;
   align-items: center;
   padding: 0 15px;
-  font-family: URW Chancery L, cursive;
+  font-family: Georgia, serif;
   font-size: 20px;
   color: #4B0082;
 }

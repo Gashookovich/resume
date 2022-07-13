@@ -57,7 +57,7 @@ img {
 h1 {
   position: relative;
   top: 0;
-  font-family: URW Chancery L, cursive;
+  font-family: Georgia, serif;
 }
 .content {
   position: relative;
@@ -66,7 +66,7 @@ h1 {
   margin: 0 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-family: URW Chancery L, cursive;
+  font-family: Georgia, serif;
   font-size: 19px;
 }
 .home-page__btns {

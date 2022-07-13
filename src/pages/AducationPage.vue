@@ -111,7 +111,7 @@ export default {
 <style scoped>
 .aducation {
   color: #4B0082;
-  font-family: URW Chancery L, cursive;
+  font-family: Georgia, serif;
 }
 .aducation__select {
   display: flex;
