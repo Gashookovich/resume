@@ -65,7 +65,7 @@ h1 {
   line-height: 2;
   margin: 0 10px;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10%;
   font-family: Georgia, serif;
   font-size: 19px;
 }
