@@ -14,9 +14,9 @@
         </div>
       </div>
       <div class="home-page__btns">
-        <my-button @click="$router.push('/aducation')">Образование</my-button>
-        <my-button @click="$router.push('/experience')" class="home-page__btns-btn">Опыт работы</my-button>
-        <my-button @click="$router.push('/hobbies')" class="home-page__btns-btn">Доп. информация</my-button>
+        <my-button @click="$router.push('/aducation')" class="home-page__btns-btn1">Образование</my-button>
+        <my-button @click="$router.push('/experience')" class="home-page__btns-btn2">Опыт работы</my-button>
+        <my-button @click="$router.push('/hobbies')" class="home-page__btns-btn3">Доп. информация</my-button>
       </div>
     </div>
 
@@ -79,7 +79,7 @@ export default {
     flex-basis: 120px;
     margin-top: 80px;
   }
-  .home-page__btns-btn {
+  .home-page__btns-btn2, .home-page__btns-btn3 {
     margin-top: 80px;
   }
 }
@@ -120,7 +120,7 @@ export default {
    justify-content: space-around;
     align-items: center;
   }
-  .home-page__btns-btn {
+  .home-page__btns-btn2, .home-page__btns-btn3 {
     margin-left: 100px;
   }
 }
@@ -161,7 +161,7 @@ export default {
     justify-content: space-around;
     align-items: center;
   }
-  .home-page__btns-btn {
+  .home-page__btns-btn2, .home-page__btns-btn3 {
     margin-left: 15px;
   }
 }
@@ -202,8 +202,12 @@ export default {
     justify-content: space-around;
     align-items: center;
   }
-  .home-page__btns-btn {
+  .home-page__btns-btn1 {
+    height: 50px;
+  }
+  .home-page__btns-btn2, .home-page__btns-btn3 {
     margin-left: 15px;
+    height: 50px;
   }
 }
 </style>
