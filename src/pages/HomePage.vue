@@ -15,8 +15,8 @@
       </div>
       <div class="home-page__btns">
         <my-button @click="$router.push('/aducation')">Образование</my-button>
-        <my-button @click="$router.push('/experience')" style="margin-top: 80px;">Опыт работы</my-button>
-        <my-button @click="$router.push('/hobbies')" style="margin-top: 80px;">Доп. информация</my-button>
+        <my-button @click="$router.push('/experience')" class="home-page__btns-btn">Опыт работы</my-button>
+        <my-button @click="$router.push('/hobbies')" class="home-page__btns-btn">Доп. информация</my-button>
       </div>
     </div>
 
@@ -40,41 +40,170 @@ export default {
 </script>
 
 <style scoped>
-img {
-  height: 100%;
-  width: 25%;
-  padding-top: 15px;
-  border-radius: 120px;
+@media screen and (max-width: 1440px) and (min-width: 960px) {
+  img {
+    height: 100%;
+    width: 25%;
+    padding-top: 15px;
+    border-radius: 120px;
+  }
+  .home-page {
+    display: flex;
+    justify-content: space-around;
+    color: #4B0082;
+  }
+  .home-page__content {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    position: relative;
+    top: 0;
+    font-family: Georgia, serif;
+  }
+  .content {
+    position: relative;
+    top: 7%;
+    line-height: 2;
+    margin: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 10%;
+    font-family: Georgia, serif;
+    font-size: 19px;
+  }
+  .home-page__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 120px;
+    margin-top: 80px;
+  }
+  .home-page__btns-btn {
+    margin-top: 80px;
+  }
 }
-.home-page {
-  display: flex;
-  justify-content: space-around;
-  color: #4B0082;
+@media screen and (max-width: 960px) and (min-width: 640px) {
+  img {
+    width: 60%;
+    border-radius: 120px;
+  }
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #4B0082;
+    align-items: center;
+  }
+  .home-page__content {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    position: relative;
+    top: 10px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+  }
+  .content {
+    position: relative;
+    top: 15px;
+    line-height: 2;
+    margin: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 10%;
+    font-family: Georgia, serif;
+    font-size: 18px;
+  }
+  .home-page__btns {
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+  }
+  .home-page__btns-btn {
+    margin-left: 100px;
+  }
 }
-.home-page__content {
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width: 640px) and (min-width: 480px) {
+  img {
+    width: 80%;
+    border-radius: 120px;
+  }
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #4B0082;
+    align-items: center;
+  }
+  .home-page__content {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    position: relative;
+    top: 10px;
+    font-family: Georgia, serif;
+    font-size: 27px;
+  }
+  .content {
+    position: relative;
+    top: 15px;
+    line-height: 2;
+    margin: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 10%;
+    font-family: Georgia, serif;
+    font-size: 18px;
+  }
+  .home-page__btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .home-page__btns-btn {
+    margin-left: 15px;
+  }
 }
-h1 {
-  position: relative;
-  top: 0;
-  font-family: Georgia, serif;
-}
-.content {
-  position: relative;
-  top: 7%;
-  line-height: 2;
-  margin: 0 10px;
-  padding-top: 5px;
-  padding-bottom: 10%;
-  font-family: Georgia, serif;
-  font-size: 19px;
-}
-.home-page__btns {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 120px;
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  img {
+    width: 90%;
+    border-radius: 120px;
+  }
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #4B0082;
+    align-items: center;
+  }
+  .home-page__content {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    position: relative;
+    top: 10px;
+    font-family: Georgia, serif;
+    font-size: 25px;
+  }
+  .content {
+    position: relative;
+    top: 15px;
+    line-height: 2;
+    margin: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 10%;
+    font-family: Georgia, serif;
+    font-size: 18px;
+  }
+  .home-page__btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .home-page__btns-btn {
+    margin-left: 15px;
+  }
 }
 </style>

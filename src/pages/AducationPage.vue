@@ -109,22 +109,89 @@ export default {
 </script>
 
 <style scoped>
-.aducation {
-  color: #4B0082;
-  font-family: Georgia, serif;
+@media screen and (max-width: 1440px) and (min-width: 960px) {
+  .aducation {
+    color: #4B0082;
+    font-family: Georgia, serif;
+  }
+  .aducation__select {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .aducation__image {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 5px;
+  }
+  .image {
+    width: 48%;
+    margin: 5px 5px;
+    border: 2px solid #4B0082;
+  }
 }
-.aducation__select {
-  display: flex;
-  justify-content: flex-end;
+@media screen and (max-width: 960px) and (min-width: 640px) {
+  .aducation {
+    color: #4B0082;
+    font-family: Georgia, serif;
+  }
+  .aducation__select {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .aducation__image {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 5px;
+  }
+  .image {
+    width: 48%;
+    margin: 5px 5px;
+    border: 2px solid #4B0082;
+  }
 }
-.aducation__image {
-  display: flex;
-  flex-direction: row;
-  margin: 5px 5px;
+@media screen and (max-width: 640px) and (min-width: 480px) {
+  .aducation {
+    color: #4B0082;
+    font-family: Georgia, serif;
+  }
+  .aducation__select {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .aducation__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 5px;
+  }
+  .image {
+    width: 90%;
+    margin: 5px 5px;
+    border: 2px solid #4B0082;
+  }
 }
-.image {
-  width: 48%;
-  margin: 5px 5px;
-  border: 2px solid #4B0082;
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .aducation {
+    color: #4B0082;
+    font-family: Georgia, serif;
+  }
+  .aducation__select {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .aducation__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 5px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .image {
+    width: 95%;
+    margin: 5px 5px;
+    border: 2px solid #4B0082;
+  }
 }
 </style>

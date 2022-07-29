@@ -50,6 +50,18 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 1440px) and (min-width: 960px) {
+
+}
+@media screen and (max-width: 960px) and (min-width: 640px) {
+
+}
+@media screen and (max-width: 640px) and (min-width: 480px) {
+
+}
+@media screen and (max-width: 640px) and (min-width: 480px) {
+
+}
 .hobbies {
   color: #4B0082;
   font-family: Georgia, serif;
